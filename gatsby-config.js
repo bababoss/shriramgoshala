@@ -1,6 +1,6 @@
 module.exports = {
   output: {
-    globalObject: 'this',
+    globalObject: `this`,
   },
   siteMetadata: {
     title: `Gatsby Default Starter`,
