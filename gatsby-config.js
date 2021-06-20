@@ -1,5 +1,5 @@
 module.exports = {
-  output: {
+  window: {
     globalObject: `this`,
   },
   siteMetadata: {
