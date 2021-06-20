@@ -1,13 +1,4 @@
 {
-  "name": "shriramgoshalakhejroli",
-  "description": "a really cool app",
-  "version": "1.0.0",
-  "engines": {
-    "node": "14.x",
-    "npm": "6.x"
-  }
-}
-{
   "name": "gatsby-starter-default",
   "private": true,
   "description": "Charity fundrising with Gatsby",
@@ -49,5 +40,9 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
   }
 }
