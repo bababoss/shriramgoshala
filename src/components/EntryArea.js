@@ -11,6 +11,9 @@ class EntryArea extends Component {
       isOpen: false,
     };
   }
+  componentDidMount(){
+    this.mounted = true;
+  }
 
   handleModal = () => {
     this.setState({ isOpen: !this.state.isOpen });
@@ -64,13 +67,14 @@ class EntryArea extends Component {
             </div>
           </div>
         </section>
-
-        <ModalVideo
-          channel="youtube"
-          isOpen={this.state.isOpen}
-          videoId="PbUxi2Lx8x8"
-          onClose={this.handleModal}
-        />
+        {this.mounted && (
+          <ModalVideo
+            channel="youtube"
+            isOpen={this.state.isOpen}
+            videoId="RQu7jpcNUWI"
+            onClose={() => this.setState({ isOpen: false })}
+          />
+        )}
       </React.Fragment>
     );
   }
