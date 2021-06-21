@@ -14,6 +14,10 @@ class MixerAreaThree extends Component {
     this.setState({ isOpen: true });
   };
 
+  componentDidMount(){
+    this.mounted = true
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -58,12 +62,12 @@ class MixerAreaThree extends Component {
             </div>
           </div>
         </section>
-        {/* <ModalVideo
+        {this.mounted && <ModalVideo
           channel="youtube"
           isOpen={this.state.isOpen}
           videoId="RQu7jpcNUWI"
           onClose={() => this.setState({ isOpen: false })}
-        /> */}
+        />}
       </React.Fragment>
     );
   }
