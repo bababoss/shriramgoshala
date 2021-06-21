@@ -65,12 +65,12 @@ class EntryArea extends Component {
           </div>
         </section>
 
-        <ModalVideo
+        {/* <ModalVideo
           channel="youtube"
           isOpen={this.state.isOpen}
           videoId="PbUxi2Lx8x8"
           onClose={this.handleModal}
-        />
+        /> */}
       </React.Fragment>
     );
   }

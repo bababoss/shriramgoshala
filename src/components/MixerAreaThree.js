@@ -58,12 +58,12 @@ class MixerAreaThree extends Component {
             </div>
           </div>
         </section>
-        <ModalVideo
+        {/* <ModalVideo
           channel="youtube"
           isOpen={this.state.isOpen}
           videoId="RQu7jpcNUWI"
           onClose={() => this.setState({ isOpen: false })}
-        />
+        /> */}
       </React.Fragment>
     );
   }
